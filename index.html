@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman</title>
+  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container-general">
+    <div class="startContainer" id="startContainer">
+      <form id="usernameForm" class="userForm">
+        <h2>Choose your name</h2>
+        <label for="username" class="username">User name:</label> 
+        <br>
+        <input type="text" id="username" required class="inputName">
+        <br>
+        <button type="submit" id="startButton" class="startButton">Start</button>
+      </form>
+    </div>
+    
+    <div id="game-container" class="container">
+      <div id="options-container"></div>
+      <div id="letter-container" class="letter-container hide"></div>
+      <div id="user-input-section"></div>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="new-game-container" class="new-game-popup hide result-container">
+      <div id="result-text"></div>
+      <button id="new-game-button" type="button">New Game</button>
+    </div>
+
+    <div class="ranking-container" id="ranking-container">
+      <div class="ranking-title">RANKING!</div>
+      <div class="ranking-user"><strong>Michele</strong> 14 sec</div>
+      <div class="ranking-user"><strong>Aaron</strong> 18 sec</div>
+      <div class="ranking-user"><strong>Andrea</strong> 20 sec</div>
+      <div class="ranking-user"><strong>Ignacio</strong> 25 sec</div>
+    </div>  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
