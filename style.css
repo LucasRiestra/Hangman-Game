@@ -19,12 +19,12 @@
   .container {
     
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: #dffff9;
     width: 90vw;
     max-width: 34em;
     padding: 3em;
     border-radius: 0.6em;
-    box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+    box-shadow: 1em 1em 2em black;
     margin-top: 2em;
     margin-bottom: 2em;
   }
@@ -32,20 +32,20 @@
   .ranking-container {
     
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: #dffff9;
     width: 90vw;
     max-width: 34em;
     padding: 1em;
     border-radius: 0.6em;
-    box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
     text-align: center;
     margin-top: 2em; 
     margin-bottom: 2em; 
+    box-shadow: 1em 1em 2em black;
   }
   .startContainer {
    
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: #dffff9;
     width: 90vw;
     max-width: 34em;
     padding: 1em;
@@ -54,6 +54,7 @@
     text-align: center;
     margin-top: 2em; 
     margin-bottom: 2em;
+    box-shadow: 1em 1em 2em black;
   }
   #options-container {
     text-align: center;
@@ -66,20 +67,19 @@
   }
   #options-container button {
     padding: 0.6em 1.2em;
-    border: 3px solid #000000;
+    border: 1px solid #005693;
     background-color: #ffffff;
     color: #000000;
     border-radius: 0.3em;
     text-transform: capitalize;
   }
   #options-container button:disabled {
-    border: 3px solid #808080;
+    border: 1px solid #005693;
     color: #808080;
-    background-color: #efefef;
+    background-color: #dffff9;
   }
   #options-container button.active {
     background-color: #31f4d0;
-    border: 3px solid #000000;
     color: #000000;
   }
   .letter-container {
@@ -93,11 +93,12 @@
     height: 2.4em;
     width: 2.4em;
     border-radius: 0.3em;
-    background-color: #ffffff;
+    background-color: #e3ffdf;
+    
   }
   
   .new-game-popup {
-    background-color: #ffffff;
+    background-color: #dffff9;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -121,7 +122,7 @@
   canvas {
     display: block;
     margin: auto;
-    border: 1px solid #000000;
+    
   }
   .hide {
     display: none;
@@ -130,13 +131,13 @@
 .result-container {
   
   font-size: 1.5em;
-  background-color: #ffffff;
+  background-color: #dffff9;
   padding: 1em;
   border-radius: 0.6em;
-  box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
   text-align: center;
   margin-top: 1em; 
   margin-bottom: 1em; 
+  box-shadow: 1em 1em 2em black;
 }
 
   #result-text {
@@ -160,9 +161,10 @@
     font-size: 1.25em;
     padding: 0.5em 1em;
     background-color: #31f4c7;
-    border: 3px solid #000000;
+    border: 1px solid #005693;
     color: #000000;
     border-radius: 0.2em;
+    
   }
   .win-msg {
     color: #39d78d;
@@ -175,15 +177,17 @@
     font-size: 1.25em;
     padding: 0.3em 1em;
     background-color: #31f4c7;
-    border: 3px solid #000000;
+    border: 1px solid #005693;
     color: #000000;
     border-radius: 0.2em;
     margin-top: 1em;
+    
   }
 
   .ranking-title {
     font-size: 2em;
     font-weight: bold;
     text-decoration: underline;
+    text-shadow: 1em 1em 1em rgb(43, 255, 198);
   }
 

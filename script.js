@@ -126,6 +126,7 @@ const initializer = () => {
               resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
               // Block all buttons
               blocker();
+              stopTimer();
             }
           }
         });
@@ -244,6 +245,21 @@ const drawMan = (count) => {
   }
 };
 
+let timeInSeconds = 0;
+  let timerInterval;
+
+  const startTimer = () => {
+    timerInterval = setInterval(() => {
+      timeInSeconds++;
+
+      document.getElementById("time-display").innerText = `Time: ${timeInSeconds} sec`;
+    }, 1000);
+  };
+
+  const stopTimer = () => {
+    clearInterval(timerInterval);
+  };
+
 newGameButton.addEventListener("click", () => {
   event.preventDefault(); // Prevent form submission
   const username = document.getElementById("username").value;
@@ -257,8 +273,13 @@ newGameButton.addEventListener("click", () => {
   initializer();
 
   gameContainer.style.display = "block";
-  resultContainer.style.display = "none";
+  //resultContainer.style.display = "none";
 
+  stopTimer();
+  timeInSeconds = 0;
+  document.getElementById("time-display").innerText = "Time: 0 sec";
+
+  startTimer();
 });
 
 
@@ -273,6 +294,8 @@ startButton.addEventListener("click", (event) => {
   startContainer.style.display = "none"; 
   gameContainer.style.display = "block"; 
   initializer();
+
+  startTimer();
 });
 
 window.onload = () => {
